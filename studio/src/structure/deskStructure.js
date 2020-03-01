@@ -63,6 +63,11 @@ export default () =>
         .schemaType('post')
         .child(S.documentTypeList('post').title('Blog posts')),
       S.listItem()
+        .title('Blog tests')
+        .icon(MdDescription)
+        .schemaType('test')
+        .child(S.documentTypeList('test').title('Blog tests')),
+      S.listItem()
         .title('Authors')
         .icon(MdPerson)
         .schemaType('author')
